@@ -94,8 +94,8 @@
     header nav > a:first-child { color: #800020; }
     header nav > a:first-child::after { width: 70%; }
     /* Dropdowns centered under their menu item */
-    header nav .absolute { left: 50%; transform: translateX(-50%); text-align: center; }
-    header nav .absolute a { justify-content: center; }
+    header nav .absolute { left: 50%; transform: translateX(-50%); text-align: left; }
+    header nav .absolute a { justify-content: flex-start; text-align: left; }
     .nav-btn { font-family: var(--nav-font); }
 
     /* ===== ExCo profile photos ===== */
@@ -143,8 +143,8 @@
               <i data-lucide="chevron-down" class="w-3 h-3 text-gray-500 group-hover:text-clcBurgundy transition"></i>
             </button>
             <div class="absolute left-0 mt-1.5 w-52 bg-white rounded-xl shadow-xl border border-clcGold/20 py-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Charism & Identity</a>
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">History in Ethiopia</a>
+              <a href="#" data-info="charism" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Charism & Identity</a>
+              <a href="#" data-info="history" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">History in Ethiopia</a>
               <a href="#excos" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">National Leadership (ExCos)</a>
               <a href="https://cvx-clc.net" target="_blank" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px] flex justify-between items-center">
                 <span>CVX World Secretariat</span>
@@ -160,9 +160,9 @@
               <i data-lucide="chevron-down" class="w-3 h-3 text-gray-500 group-hover:text-clcBurgundy transition"></i>
             </button>
             <div class="absolute left-0 mt-1.5 w-52 bg-white rounded-xl shadow-xl border border-clcGold/20 py-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-              <a href="#pillars" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Spirituality (መንፈሳዊነት)</a>
-              <a href="#pillars" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Community (ኅብረት)</a>
-              <a href="#pillars" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Mission (ተልዕኮ)</a>
+              <a href="#" data-readmore="pillar" data-pillar="spirituality" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Spirituality (መንፈሳዊነት)</a>
+              <a href="#" data-readmore="pillar" data-pillar="community" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Community (ኅብረት)</a>
+              <a href="#" data-readmore="pillar" data-pillar="mission" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Mission (ተልዕኮ)</a>
             </div>
           </div>
 
@@ -173,10 +173,10 @@
               <i data-lucide="chevron-down" class="w-3 h-3 text-gray-500 group-hover:text-clcBurgundy transition"></i>
             </button>
             <div class="absolute left-0 mt-1.5 w-60 bg-white rounded-xl shadow-xl border border-clcGold/20 py-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">What is Ignatian Spirituality?</a>
+              <a href="#" data-info="ignatian" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">What is Ignatian Spirituality?</a>
               <a href="#examen" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">The Daily Examen Tool</a>
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Spiritual Exercises & Retreats</a>
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Digital Resource Library</a>
+              <a href="#" data-info="exercises" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Spiritual Exercises & Retreats</a>
+              <a href="#" data-info="library" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Digital Resource Library</a>
             </div>
           </div>
 
@@ -187,9 +187,9 @@
               <i data-lucide="chevron-down" class="w-3 h-3 text-gray-500 group-hover:text-clcBurgundy transition"></i>
             </button>
             <div class="absolute left-0 mt-1.5 w-52 bg-white rounded-xl shadow-xl border border-clcGold/20 py-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Catechism & Formation</a>
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Youth & University Ministry</a>
-              <a href="#" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Family & Marriage Support</a>
+              <a href="#" data-info="formation" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Catechism & Formation</a>
+              <a href="#" data-info="youth" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Youth & University Ministry</a>
+              <a href="#" data-info="family" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Family & Marriage Support</a>
             </div>
           </div>
 
@@ -200,9 +200,9 @@
               <i data-lucide="chevron-down" class="w-3 h-3 text-gray-500 group-hover:text-clcBurgundy transition"></i>
             </button>
             <div class="absolute left-0 mt-1.5 w-56 bg-white rounded-xl shadow-xl border border-clcGold/20 py-1.5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150">
-              <a href="#join" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">How Small Groups Work</a>
-              <a href="#join" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Find Local Hubs</a>
-              <a href="#testimonials" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Testimonials</a>
+              <a href="#" data-info="groups" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">How Small Groups Work</a>
+              <a href="#" data-info="hubs" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Find Local Hubs</a>
+              <a href="#" data-info="voices" class="block px-3.5 py-1.5 hover:bg-clcWarmWhite hover:text-clcBurgundy text-[11px]">Testimonials</a>
             </div>
           </div>
 
@@ -269,7 +269,7 @@
           src="photo_2026-10-20_00-47-49.jpg" 
           alt="CLC Ethiopia Assembly and Fellowship" 
           class="w-full h-full object-cover"
-          onerror="this.onerror=null; this.src='photo_2026-10-20_00-47-49.jpg';"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1800&q=80';"
         />
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/70"></div>
         <div class="absolute inset-0 flex items-center">
@@ -300,7 +300,7 @@
           src="images\photo_2026-08-08_10-00-50.jpg" 
           alt="Ignatian Silent Retreat" 
           class="w-full h-full object-cover"
-          onerror="this.onerror=null; this.src='images\photo_2026-08-08_10-00-50.jpg';"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1800&q=80';"
         />
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/70"></div>
         <div class="absolute inset-0 flex items-center">
@@ -331,7 +331,7 @@
           src="images\photo_2026-08-08_09-59-10.jpg" 
           alt="Youth & Apostolic Service" 
           class="w-full h-full object-cover"
-          onerror="this.onerror=null; this.src='images\photo_2026-08-08_09-59-10.jpg';"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=80';"
         />
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/70"></div>
         <div class="absolute inset-0 flex items-center">
@@ -464,6 +464,7 @@
             <li class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-clcGold"></i> 3-Day & 8-Day Silent Retreats</li>
             <li class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-clcGold"></i> Guided Spiritual Direction</li>
           </ul>
+          <button type="button" data-readmore="pillar" data-pillar="spirituality" class="mt-5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md border border-clcBurgundy/30 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:bg-clcBurgundy hover:text-white transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
         </div>
 
         <div class="tilt-card bg-white rounded-xl p-7 border border-clcGold/20 shadow-card-3d">
@@ -480,6 +481,7 @@
             <li class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-clcGold"></i> Mutual Fraternal Support</li>
             <li class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-clcGold"></i> Diocesan & National Gatherings</li>
           </ul>
+          <button type="button" data-readmore="pillar" data-pillar="community" class="mt-5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md border border-clcBurgundy/30 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:bg-clcBurgundy hover:text-white transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
         </div>
 
         <div class="tilt-card bg-white rounded-xl p-7 border border-clcGold/20 shadow-card-3d">
@@ -496,6 +498,7 @@
             <li class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-clcGold"></i> Integral Ecology Initiatives</li>
             <li class="flex items-center gap-2"><i data-lucide="arrow-right" class="w-3 h-3 text-clcGold"></i> Youth Leadership Formation</li>
           </ul>
+          <button type="button" data-readmore="pillar" data-pillar="mission" class="mt-5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-md border border-clcBurgundy/30 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:bg-clcBurgundy hover:text-white transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
         </div>
 
       </div>
@@ -543,7 +546,7 @@
         <div class="py-8 min-h-[180px] flex flex-col justify-center text-center max-w-lg mx-auto">
           <span id="examenStepSub" class="text-[10px] uppercase tracking-widest text-clcGold">Step 1 of 5 • ምስጋና</span>
           <h3 id="examenStepTitle" class="font-serif text-xl sm:text-2xl font-bold text-white mt-1 mb-3">
-            Give Thanks for God’s Gifts
+            Place yourself in God’s presence. Give thanks for God’s great love for you. 
           </h3>
           <p id="examenStepDesc" class="text-gray-300 text-xs sm:text-sm leading-relaxed">
             Begin by recalling the small blessings of today: the breath in your lungs, a kind word received, a meal shared, or moments of peace. Let gratitude fill your heart.
@@ -573,7 +576,7 @@
   <section id="events" class="py-16 bg-white border-b border-clcGold/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8">
+      <div class="flex flex-col items-center text-center mb-8">
         <div>
           <span class="text-xs font-semibold tracking-widest uppercase text-clcBurgundy">Recent Gatherings & Recaps in Our Communities</span>
           <h2 class="font-serif text-2xl sm:text-3xl font-bold text-clcCharcoal mt-0.5">News & Events Photo Gallery</h2>
@@ -581,7 +584,7 @@
         </div>
 
         <!-- Filter Buttons for Events Gallery -->
-        <div class="mt-4 md:mt-0 flex flex-wrap gap-1.5 text-[11px]">
+        <div class="mt-4 flex flex-wrap justify-center gap-1.5 text-[11px]">
           <button onclick="filterGallery('all')" class="gallery-filter-btn px-3 py-1 rounded-full bg-clcBurgundy text-white font-medium" data-filter="all">All Photos</button>
           <button onclick="filterGallery('assemblies')" class="gallery-filter-btn px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium" data-filter="assemblies">Assemblies</button>
           <button onclick="filterGallery('retreats')" class="gallery-filter-btn px-3 py-1 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-medium" data-filter="retreats">Retreats</button>
@@ -599,7 +602,7 @@
               src="images\photo_2026-08-08_09-59-10.jpg" 
               alt="National CLC Ethiopia Assembly" 
               class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              onerror="this.onerror=null; this.src='images\photo_2026-08-08_09-59-10.jpg';"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=700&q=80';"
             />
           </div>
           <div class="p-4 bg-white">
@@ -609,6 +612,7 @@
             </div>
             <h4 class="font-serif font-bold text-sm text-clcCharcoal">National 8-Day Retreat</h4>
             <p class="text-xs text-gray-500 mt-1 line-clamp-2">We are profoundly grateful for the graces received during our recent CLC Annual 8-Day Retreat. It was a sacred time of silent prayer, deep reflection, and personal encounter with the Lord, guided by the Ignatian Spiritual Exercises.</p>
+            <button type="button" data-readmore="news" class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:text-clcGoldDark transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
           </div>
         </div>
 
@@ -619,7 +623,7 @@
               src="images\photo_2026-08-08_10-00-41.jpg" 
               alt="Galilee Centre Silent Retreat" 
               class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              onerror="this.onerror=null; this.src='images\photo_2026-08-08_10-00-41.jpg';"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=700&q=80';"
             />
           </div>
           <div class="p-4 bg-white">
@@ -629,6 +633,7 @@
             </div>
             <h4 class="font-serif font-bold text-sm text-clcCharcoal">Spiritual Exercises Retreat</h4>
             <p class="text-xs text-gray-500 mt-1 line-clamp-2">Three days of guided contemplative prayer and personal spiritual direction.</p>
+            <button type="button" data-readmore="news" class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:text-clcGoldDark transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
           </div>
         </div>
 
@@ -639,7 +644,7 @@
               src="images\photo_2026-08-08_10-00-43.jpg" 
               alt="Youth Outreach Fellowship" 
               class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              onerror="this.onerror=null; this.src='images\photo_2026-08-08_10-00-43.jpg';"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80';"
             />
           </div>
           <div class="p-4 bg-white">
@@ -649,6 +654,7 @@
             </div>
             <h4 class="font-serif font-bold text-sm text-clcCharcoal">University Students Vocation Day</h4>
             <p class="text-xs text-gray-500 mt-1 line-clamp-2">Youth circle exploring life choices, professional ethics, and Christian leadership.</p>
+            <button type="button" data-readmore="news" class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:text-clcGoldDark transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
           </div>
         </div>
 
@@ -659,7 +665,7 @@
               src="St. Ignatius.jpg" 
               alt="Feast of St. Ignatius Celebration" 
               class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              onerror="this.onerror=null; this.src='St. Ignatius.jpg';"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80';"
             />
           </div>
           <div class="p-4 bg-white">
@@ -669,6 +675,7 @@
             </div>
             <h4 class="font-serif font-bold text-sm text-clcCharcoal">Feast of St. Ignatius of Loyola</h4>
             <p class="text-xs text-gray-500 mt-1 line-clamp-2">Today, our Christian Life Community (CLC) family joins the global Church in celebrating the Feast of St. Ignatius of Loyola, the founder of the Jesuits and the source of the Ignatian spirituality that shapes our way of life.</p>
+            <button type="button" data-readmore="news" class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:text-clcGoldDark transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
           </div>
         </div>
 
@@ -679,7 +686,7 @@
               src="Family.jpg" 
               alt="Apostolic Outreach Solidarity" 
               class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-              onerror="this.onerror=null; this.src='Family.jpg';"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=80';"
             />
           </div>
           <div class="p-4 bg-white">
@@ -689,6 +696,7 @@
             </div>
             <h4 class="font-serif font-bold text-sm text-clcCharcoal">Gather in Faith, Grow in Love with CLC Family Gathering</h4>
             <p class="text-xs text-gray-500 mt-1 line-clamp-2">We are filled with gratitude as we look back on our recent CLC Family Gathering! It was a beautiful day of fellowship, prayer, and shared laughter as members from all generations came together to strengthen our bonds.</p>
+            <button type="button" data-readmore="news" class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:text-clcGoldDark transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
           </div>
         </div>
 
@@ -709,6 +717,7 @@
             </div>
             <h4 class="font-serif font-bold text-sm text-clcCharcoal">Small Group Faith Sharing</h4>
             <p class="text-xs text-gray-500 mt-1 line-clamp-2">Bi-weekly meeting for Gospel contemplation and Ignatian consciousness review.</p>
+            <button type="button" data-readmore="news" class="mt-3 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wider text-clcBurgundy hover:text-clcGoldDark transition">Read More <i data-lucide="arrow-right" class="w-3 h-3"></i></button>
           </div>
         </div>
 
@@ -723,7 +732,6 @@
       
       <!-- Section Title -->
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs font-semibold tracking-widest uppercase text-clcBurgundy font-ethiopic">ብሔራዊ ጽሕፈት ቤትና አመራር</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-clcCharcoal mt-1 mb-2">
           Contact Us & National Leadership
         </h2>
@@ -782,10 +790,18 @@
             </div>
 
             <div class="flex items-start gap-3">
-              <i data-lucide="send" class="w-4 h-4 text-clcBurgundy shrink-0 mt-0.5"></i>
+              <svg class="w-4 h-4 text-clcBurgundy shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
               <div>
                 <strong class="text-clcCharcoal block">Telegram Channel:</strong>
                 <a href="https://t.me/CLCEthiopiaOfficial" target="_blank" class="text-clcBurgundy hover:underline">@clcethiopia</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-clcBurgundy shrink-0 mt-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <div>
+                <strong class="text-clcCharcoal block">Official Facebook Page:</strong>
+                <a href="https://facebook.com/groups/CLCEthiopia/" target="_blank" rel="noopener" class="text-clcBurgundy hover:underline">CLC Ethiopia on Facebook</a>
               </div>
             </div>
           </div>
@@ -912,7 +928,6 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         
         <div class="lg:col-span-5 space-y-4">
-          <span class="text-xs font-semibold tracking-widest uppercase text-clcBurgundy font-ethiopic">ኅብረትን ይቀላቀሉ</span>
           <h2 class="font-serif text-2xl sm:text-3xl font-bold text-clcCharcoal">
             Join a Small Christian Community Cell
           </h2>
@@ -1034,6 +1049,14 @@
               <i data-lucide="mail" class="w-3.5 h-3.5 text-clcGold shrink-0"></i>
               <span>secretariat@clc-ethiopia.org</span>
             </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-clcGold shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              <a href="https://t.me/CLCEthiopiaOfficial" target="_blank" rel="noopener" class="hover:text-white transition">Telegram: @clcethiopia</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-3.5 h-3.5 text-clcGold shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <a href="https://facebook.com/groups/CLCEthiopia/" target="_blank" rel="noopener" class="hover:text-white transition">Facebook: CLC Ethiopia</a>
+            </li>
           </ul>
         </div>
 
@@ -1138,27 +1161,27 @@
     const examenSteps = [
       {
         sub: "Step 1 of 5 • ምስጋና",
-        title: "Give Thanks for God’s Gifts",
+        title: "Place yourself in God’s presence. Give thanks for God’s great love for you.",
         desc: "Begin by recalling the small blessings of today: the breath in your lungs, a kind word received, a meal shared, or moments of peace. Let gratitude fill your heart."
       },
       {
         sub: "Step 2 of 5 • ብርሃን መለመን",
-        title: "Ask for the Grace of Light",
+        title: "Pray for the grace to understand how God is acting in your life.",
         desc: "Ask the Holy Spirit for the light to look at your day not with harsh self-judgment, but through the compassionate, truthful eyes of Christ."
       },
       {
         sub: "Step 3 of 5 • የቀኑን ጉዞ መመርመር",
-        title: "Review the Day Hour by Hour",
+        title: "Review your day - recall specific moments and your feelings at the time. ",
         desc: "Recall the sequence of your day from morning until now. Where did you experience consolation, faith, and love? Where did you feel restless or drawn toward selfishness?"
       },
       {
         sub: "Step 4 of 5 • ይቅርታና እርቅ",
-        title: "Seek Forgiveness & Healing",
+        title: "Reflect on what you did, said, or thought in those instances. Were you drawing closer to God, or further away? ",
         desc: "Acknowledge moments where you fell short in love or patience toward family, colleagues, or strangers. Rest in God’s unfailing mercy and receive His pardon."
       },
       {
         sub: "Step 5 of 5 • ለነገ ተስፋና ውሳኔ",
-        title: "Look Forward to Tomorrow",
+        title: "Look toward tomorrow - think of how you might collaborate more effectively with God’s plan.",
         desc: "Bring tomorrow’s tasks and encounters before the Lord. Ask for the specific grace you need: courage, patience, kindness, or wisdom. Close with the Lord's Prayer."
       }
     ];
@@ -1234,6 +1257,195 @@
       event.target.reset();
       setTimeout(() => feedback.classList.add('hidden'), 6000);
     }
+  </script>
+
+  <!-- ==================== READ MORE MODAL ==================== -->
+  <div id="readModal" class="hidden fixed inset-0 z-[100] items-center justify-center p-4 bg-black/70" role="dialog" aria-modal="true" aria-labelledby="rmTitle">
+    <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button type="button" id="rmClose" aria-label="Close" class="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-clcBurgundy hover:text-white text-clcCharcoal text-xl leading-none shadow flex items-center justify-center transition">&times;</button>
+      <img id="rmImg" src="" alt="" class="hidden w-full h-56 sm:h-72 object-cover rounded-t-xl" />
+      <div id="rmIcon" class="hidden h-24 burgundy-gradient rounded-t-xl items-center justify-center text-clcGoldLight font-serif text-3xl">&#10013;</div>
+      <div class="p-6 sm:p-8">
+        <div class="flex flex-wrap items-center justify-between gap-2 text-[10px] uppercase font-bold tracking-wider mb-2">
+          <span id="rmTag" class="text-clcGoldDark"></span>
+          <span id="rmMeta" class="text-gray-400 font-normal"></span>
+        </div>
+        <h3 id="rmTitle" class="font-serif text-xl sm:text-2xl font-bold text-clcCharcoal mb-3"></h3>
+        <div class="w-12 h-0.5 bg-clcGold mb-4"></div>
+        <div id="rmBody" class="space-y-3 text-sm text-gray-600 leading-relaxed"></div>
+        <div id="rmCta" class="hidden mt-6"><a href="#join" class="inline-block px-4 py-2 rounded-lg bg-clcBurgundy text-white text-xs font-semibold hover:brightness-110 transition">Join A Local Community</a></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ===== Read More (news + pillars) =====
+    // For a longer news article, add data-full="Paragraph one||Paragraph two" to that card's gallery-card div.
+    (function () {
+      var PILLARS = {
+        spirituality: {
+          tag: 'Pillar One', title: 'Spirituality (መንፈሳዊነት)',
+          body: [
+            'CLC spirituality is rooted in the Spiritual Exercises of St. Ignatius of Loyola. Members are invited to make the Exercises and to let them shape an everyday way of life, finding God in all things.',
+            'The Daily Examen is the heart of this practice: a short prayerful review of the day that notices where God was present, gives thanks, and asks for light for tomorrow. Over time it builds interior freedom and the habit of discernment.',
+            'Members also take part in 3-day and 8-day silent retreats and receive guided spiritual direction, so that personal prayer stays connected to real decisions in family, work and study.'
+          ]
+        },
+        community: {
+          tag: 'Pillar Two', title: 'Community (ኅብረት)',
+          body: [
+            'CLC members gather in small communities of about 6 to 12 companions who meet regularly, weekly or every two weeks. These groups are a confidential place to share faith and life without judgment.',
+            'Each local community belongs to a larger network: regional, national and the worldwide Christian Life Community. Diocesan and national gatherings give members the chance to meet, pray and discern together beyond their own group.',
+            'Regular group discernment and mutual fraternal support help members stay faithful to their vocation and encourage one another in daily life.'
+          ]
+        },
+        mission: {
+          tag: 'Pillar Three', title: 'Mission (ተልዕኮ)',
+          body: [
+            'For CLC, prayer and community lead to mission. Ignatian spirituality has an essential apostolic dimension, and members reflect on how to bring Gospel values into every part of life.',
+            'In Ethiopia this means serving at apostolic frontiers: mentoring young people, supporting chaplaincy work and caring actively for the vulnerable, in solidarity with the poor.',
+            'Members also take part in integral ecology initiatives and youth leadership formation, integrating contemplation and action in a spirit of discernment.'
+          ]
+        }
+      };
+
+      var modal = document.getElementById('readModal');
+      var img = document.getElementById('rmImg'), icon = document.getElementById('rmIcon');
+      var tag = document.getElementById('rmTag'), meta = document.getElementById('rmMeta');
+      var ttl = document.getElementById('rmTitle'), body = document.getElementById('rmBody');
+      var cta = document.getElementById('rmCta');
+
+      function fill(paras) {
+        body.innerHTML = '';
+        paras.forEach(function (t) {
+          if (!t.trim()) return;
+          var p = document.createElement('p'); p.textContent = t.trim(); body.appendChild(p);
+        });
+      }
+      function openModal() { modal.classList.remove('hidden'); modal.classList.add('flex'); document.body.style.overflow = 'hidden'; }
+      function closeModal() { modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.style.overflow = ''; }
+
+      document.addEventListener('click', function (e) {
+        var b = e.target.closest('[data-readmore]');
+        if (b) {
+          if (b.dataset.readmore === 'news') {
+            var card = b.closest('.gallery-card');
+            var spans = card.querySelectorAll('.p-4 span');
+            var pic = card.querySelector('img');
+            var full = card.getAttribute('data-full');
+            img.src = pic.currentSrc || pic.src; img.alt = pic.alt; img.classList.remove('hidden');
+            icon.classList.add('hidden'); icon.classList.remove('flex');
+            tag.textContent = spans[0] ? spans[0].textContent : '';
+            meta.textContent = spans[1] ? spans[1].textContent : '';
+            ttl.textContent = card.querySelector('h4').textContent;
+            fill(full ? full.split('||') : [card.querySelector('.p-4 p').textContent]);
+            cta.classList.add('hidden');
+          } else {
+            var d = PILLARS[b.dataset.pillar];
+            img.classList.add('hidden');
+            icon.classList.remove('hidden'); icon.classList.add('flex');
+            tag.textContent = d.tag; meta.textContent = 'CLC Ethiopia \u2022 CVX';
+            ttl.textContent = d.title; fill(d.body);
+            cta.classList.remove('hidden');
+          }
+          openModal(); return;
+        }
+        if (e.target === modal || e.target.closest('#rmClose') || e.target.closest('#rmCta a')) closeModal();
+      });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+    })();
+  </script>
+
+  <script>
+    // ===== Navbar dropdown content (opens in the Read More modal) =====
+    (function () {
+      var INFO = {
+        charism: { tag: 'About Us', title: 'Charism & Identity', join: true, body: [
+          'The Christian Life Community (CLC, or CVX in Latin) is an international association of lay Christians, men and women, young and old, of all social conditions, who want to follow Jesus Christ more closely and work with him for the building of the Kingdom.',
+          'Its charism comes from the Spiritual Exercises of St. Ignatius of Loyola. Members seek to find God in all things, to discern in the light of the Gospel, and to be sent on mission, integrating contemplation and action in daily life.',
+          'CLC traces its roots to the Sodality of Our Lady, founded among students in 1563 at the Roman College. It took the name Christian Life Community in 1967. Today it is present in almost 60 countries, and CLC Ethiopia is part of that one world community.'
+        ]},
+        history: { tag: 'About Us', title: 'History in Ethiopia', join: false, body: [
+          'CLC is a relatively young movement in Ethiopia. It was brought here through Jesuit companions who had met the community abroad, and it first took root among young, urban and university-educated Catholics looking for community and a deeper Ignatian spirituality.',
+          'From the first small groups in Addis Ababa, the community has grown to gatherings and groups in several towns and campuses, including Debre Zeit, Hawassa and Sodo, with an annual national retreat and regular local meetings.',
+          'Dates and names in this short history are a summary. Please contact the National Secretariat for the full, official account of how CLC began in Ethiopia.'
+        ]},
+        ignatian: { tag: 'Ignatian Spirituality', title: 'What is Ignatian Spirituality?', join: false, body: [
+          'Ignatian spirituality is the way of living the Gospel taught by St. Ignatius of Loyola, founder of the Jesuits. It is built on the belief that God is at work in every part of ordinary life and can be found in all things.',
+          'Its key practices are daily prayer and the Examen, attention to our deepest desires and movements of heart, and discernment: choosing what leads to greater love and service. It is always oriented toward serving others, for the greater glory of God (Ad Maiorem Dei Gloriam).',
+          'You can try a short guided Examen in the Daily Examen Tool section of this website.'
+        ], links: [['Try the Daily Examen Tool', '#examen']] },
+        exercises: { tag: 'Ignatian Spirituality', title: 'Spiritual Exercises & Retreats', join: true, body: [
+          'The Spiritual Exercises are a structured series of meditations, contemplations and prayers designed by St. Ignatius to help a person grow in freedom and respond to God\u2019s call. Making the Exercises is of great importance for CLC members.',
+          'CLC Ethiopia offers silent retreats in the Ignatian tradition, including 3-day retreats and an annual 8-day retreat, with personal spiritual direction throughout.',
+          'Watch the News & Events section for upcoming retreats, or contact the Secretariat to ask about the next one.'
+        ], links: [['See retreats in News & Events', '#events']] },
+        library: { tag: 'Ignatian Spirituality', title: 'Digital Resource Library', join: false, body: [
+          'A growing collection of prayer and formation resources for CLC members and friends is planned for this website.',
+          'In the meantime, the Daily Examen tool on this page is ready to use, and the World Christian Life Community website offers documents, news and formation material from the worldwide community.'
+        ], links: [['Open the Daily Examen Tool', '#examen'], ['Visit the CVX World Secretariat (cvx-clc.net)', 'https://cvx-clc.net']] },
+        formation: { tag: 'What We Do', title: 'Catechism & Formation', join: true, body: [
+          'Formation is at the heart of CLC life. Members grow in faith through Scripture, prayer, the teaching of the Church and the Ignatian Exercises, and they learn to apply these to real decisions in family, work and society.',
+          'Formation happens mainly in the small community, through regular meetings, and is supported by retreats, national gatherings and guidance from the Ecclesiastical Assistant.'
+        ]},
+        youth: { tag: 'What We Do', title: 'Youth & University Ministry', join: true, body: [
+          'Young people and university students are at the heart of CLC in Ethiopia. Campus and youth groups give students a place to pray, share life and explore their vocation and Christian leadership.',
+          'Activities include youth circles such as the University Students Vocation Day, small-group faith sharing, retreats and service projects.'
+        ], links: [['See youth activities in News & Events', '#events']] },
+        family: { tag: 'What We Do', title: 'Family & Marriage Support', join: true, body: [
+          'CLC accompanies families as small domestic communities of faith. Family CLC groups bring parents, children and grandparents together for prayer, fellowship and mutual support.',
+          'The recent Addis Ababa Family CLC Gathering in our News & Events section shows how families of all generations strengthen their bonds in Christ.'
+        ], links: [['Read the Family Gathering story', '#events']] },
+        groups: { tag: 'Communities', title: 'How Small Groups Work', join: true, body: [
+          'A CLC small community is made up of about 6 to 12 companions who meet regularly, weekly or every two weeks.',
+          'A typical meeting includes prayer, a reading from Scripture, sharing of how God has been present in each person\u2019s life, and shared discernment. What is shared stays within the group.',
+          'Each group belongs to a diocesan or regional and national community, and through them to the worldwide CLC.'
+        ]},
+        hubs: { tag: 'Communities', title: 'Find Local Hubs', join: true, body: [
+          'CLC Ethiopia communities and gatherings are found in Addis Ababa and other towns and campuses, including Debre Zeit, Hawassa and Sodo.',
+          'To be put in touch with a group near you, fill in the Join A Local Community form, or contact the National Secretariat.'
+        ], links: [['Contact the Secretariat', '#contact']] },
+        voices: { tag: 'Communities', title: 'Testimonials', join: true, body: [
+          'Members\u2019 stories are the best way to see what CLC is about. Their experiences of retreats, family gatherings and youth activities are shared in the News & Events section.',
+          'Are you a CLC member with a story to share? Send it to the National Secretariat and it may be featured here.'
+        ], links: [['Read recent stories', '#events'], ['Send us your story', '#contact']] }
+      };
+
+      var modal = document.getElementById('readModal');
+      var img = document.getElementById('rmImg'), icon = document.getElementById('rmIcon');
+      var tag = document.getElementById('rmTag'), meta = document.getElementById('rmMeta');
+      var ttl = document.getElementById('rmTitle'), body = document.getElementById('rmBody');
+      var cta = document.getElementById('rmCta');
+
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[data-readmore], a[data-info]');
+        if (!a) return;
+        e.preventDefault();
+        if (!a.hasAttribute('data-info')) return; // pillar items are handled by the Read More script
+        var d = INFO[a.getAttribute('data-info')];
+        img.classList.add('hidden');
+        icon.classList.remove('hidden'); icon.classList.add('flex');
+        tag.textContent = d.tag; meta.textContent = 'CLC Ethiopia \u2022 CVX';
+        ttl.textContent = d.title;
+        body.innerHTML = '';
+        d.body.forEach(function (t) { var p = document.createElement('p'); p.textContent = t; body.appendChild(p); });
+        (d.links || []).forEach(function (l) {
+          var p = document.createElement('p'); var x = document.createElement('a');
+          x.href = l[1]; x.textContent = l[0] + ' \u2192';
+          x.className = 'font-semibold text-clcBurgundy hover:underline';
+          if (l[1].charAt(0) !== '#') { x.target = '_blank'; x.rel = 'noopener'; } else { x.setAttribute('data-close', '1'); }
+          p.appendChild(x); body.appendChild(p);
+        });
+        cta.classList.toggle('hidden', !d.join);
+        modal.classList.remove('hidden'); modal.classList.add('flex'); document.body.style.overflow = 'hidden';
+      });
+      // close the modal when an in-page link inside it is used
+      body.addEventListener('click', function (e) {
+        if (e.target.closest('a[data-close]')) {
+          modal.classList.add('hidden'); modal.classList.remove('flex'); document.body.style.overflow = '';
+        }
+      });
+    })();
   </script>
 </body>
 </html>
